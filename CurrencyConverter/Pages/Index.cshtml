@@ -1,0 +1,42 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="~/css/site.css" />
+</head>
+<body>
+    <div class="contain">
+        <h1>Select a currency to convert</h1>
+        <br />
+        <img src="~/img/pngegg.png"/>
+        <br />
+        <div class="box">
+            <div class="left_box">
+                <select name="currency" class="currency"></select>
+                <input type="number" name="" id="num">
+            </div>
+            <br />
+                <div>
+                    <input type="image" class="swap" id="swapbtn" src="~/img/swap-icon-png-22.jpg" />
+                </div>
+            <br />
+            <div class="right_box">
+                <select name="currency" class="currency"></select>
+                <input type="text" name="" id="numTwo" disabled>
+            </div>
+            <br />
+        </div>
+        <button class="btn" id="btn">Convert</button>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
